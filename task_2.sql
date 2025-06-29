@@ -1,13 +1,11 @@
 USE alx_book_store;
 
--- Drop tables in the correct order to avoid foreign key constraint errors
 DROP TABLE IF EXISTS order_details;
 DROP TABLE IF EXISTS orders;
 DROP TABLE IF EXISTS books;
 DROP TABLE IF EXISTS customers;
 DROP TABLE IF EXISTS authors;
 
--- Create tables
 CREATE TABLE authors (
     author_id INT PRIMARY KEY,
     author_name VARCHAR(215)
